@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+
+@section Scripts{
+    <script src="https://unpkg.com/vue@3.2.31/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4.0.14/dist/vue-router.global.js"></script>
+    <script src="https://unpkg.com/vue-demi"></script>
+    <script src="https://unpkg.com/pinia@2.0.11/dist/pinia.iife.prod.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@@adminkit/core@3.2.0/dist/js/app.js"></script>
+    <script>
+        const app = Vue.createApp({});
+    </script>
+    <partial name="~/Views/Components/HomeComponent.cshtml" />
+    <partial name="~/Views/Components/UsuarioComponent.cshtml" />
+    <script src="~/layouts/app.js" type="module"></script>
+}

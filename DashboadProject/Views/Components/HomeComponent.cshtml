@@ -1,0 +1,41 @@
+﻿<script type="text/x-template" id="HomeComponent">
+    <div class="container-fluid p-0">
+        <div class="row mb-2 mb-xl-3">
+            <div class="col-auto d-none d-sm-block">
+                <h3><strong>Componente</strong> Prueba</h3>
+            </div>
+        </div>
+        <div class="row mb-2 mb-xl-3">
+            <div class="col-4 mt-1">
+                <label>Campo 1: <span>{{Campo1}}</span></label>
+                <input type="text" class="form-control" placeholder="Campo1" v-model="Campo1" />
+            </div>
+            <div class="col-4 mt-1">
+                <label>Campo 2: <span>{{Campo2}}</span></label>
+                <input type="text" class="form-control" placeholder="Campo2" v-model="Campo2"  />
+            </div>
+            <div class="col-4 mt-1">
+                <label>Campo 3: <span>{{Campo3}}</span></label>
+                <input type="text" class="form-control" placeholder="Campo3" v-model="Campo3"  />
+            </div>
+        </div>
+        <div class="row mb-2 mb-xl-3" v-for="n in Numeros">
+            <div class="col-6 mt-1">
+                <label>Campo 2: <span>{{Usuario.Nombre}} {{n}}</span></label>
+                <input type="text" class="form-control" placeholder="Campo2" v-model="Usuario.Nombre"  />
+            </div>
+            <div class="col-6 mt-1">
+                <label>Campo 3: <span>{{Usuario.Apellido}}</span></label>
+                <input type="text" class="form-control" placeholder="Campo3" v-model="Usuario.Apellido"  />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img  v-bind:src="Campo1" />
+            </div>
+            <div class="col">
+                <a v-on:click="clickMessage">Hola namas por que si</a>
+            </div>
+        </div>
+    </div>
+</script>

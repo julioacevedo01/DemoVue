@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="wwwroot\assets\" />
+    <Folder Include="wwwroot\components\" />
+    <Folder Include="wwwroot\docs\" />
+    <Folder Include="wwwroot\helpers\" />
+    <Folder Include="wwwroot\mixins\" />
+    <Folder Include="wwwroot\views\" />
+    <Folder Include="wwwroot\store\" />
+    <Folder Include="wwwroot\plugins\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>
